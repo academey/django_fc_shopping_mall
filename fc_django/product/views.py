@@ -1,7 +1,7 @@
 from django.views.generic import ListView, FormView, DetailView
 from .models import Product
 from .forms import RegisterForm
-
+from order.forms import OrderForm
 
 class ProductList(ListView):
     model = Product
@@ -21,3 +21,8 @@ class ProductDetail(DetailView):
     # 아래 쿼리에서 all(필터) 를 넣어줘야 한다.
     queryset = Product.objects.all()
     context_object_name = 'product'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form'] = OrderForm()
+        return context
