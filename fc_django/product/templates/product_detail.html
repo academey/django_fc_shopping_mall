@@ -9,7 +9,7 @@
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    <form method="POST" action="/order/create">
+                    <form method="POST" action="/order/create/">
                         {% csrf_token %} <!-- 서버 전달시 csrf 공격 방지 용 -->
                         {% for field in form %}
                         <div class="form-group">
