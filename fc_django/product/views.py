@@ -3,9 +3,10 @@ from .models import Product
 from .forms import RegisterForm
 from order.forms import OrderForm
 
+
 class ProductList(ListView):
     model = Product
-    template_name = 'product.html'
+    template_name = 'order.html'
     context_object_name = 'product_list'
 
 
