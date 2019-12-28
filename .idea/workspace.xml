@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17aaac1a-933d-4ef4-875a-aa33962d241e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fc_django/fcuser/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django-tutorial-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django-tutorial-2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fc_django/fc_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/fc_django/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fc_django/fcuser/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/fcuser/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/fcuser/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/fcuser/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fc_django/fcuser/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/fcuser/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/order/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/order/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fc_django/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/order/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/product/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/product/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fc_django/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/product/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

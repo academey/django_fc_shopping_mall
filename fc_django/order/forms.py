@@ -1,8 +1,4 @@
 from django import forms
-from .models import Order
-from product.models import Product
-from fcuser.models import Fcuser
-from django.db import transaction
 
 
 class OrderForm(forms.Form):
@@ -31,18 +27,7 @@ class OrderForm(forms.Form):
         product = cleaned_data.get('product')
         fcuser_email = self.request.session.get('user')
 
-        if quantity and product and fcuser_email:
-            with transaction.atomic():
-                prod = Product.objects.get(pk=product)
-                order = Order(
-                    quantity=quantity,
-                    product=Product.objects.get(pk=product),
-                    fcuser=Fcuser.objects.get(email=fcuser_email)
-                )
-                order.save()
-                prod.stock -= quantity
-                prod.save()
-        else:
+        if not (quantity and product and fcuser_email):
             self.product = product
             self.add_error('quantity', '값이 없습니다')
             self.add_error('product', '값이 없습니다')
